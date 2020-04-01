@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -66,10 +62,10 @@
             </thead>
             <tbody>
               <tr v-for="i in latest">
-                <td class="info">{{i.date}}</td>
-                <td class="info">{{i.confirmed}}</td>
-                <td class="info">{{i.deaths}}</td>
-                <td class="info">{{i.recovered}}</td>
+                <td class="info date">{{i.date}}</td>
+                <td class="info confirmed">{{i.confirmed}}</td>
+                <td class="info deaths">{{i.deaths}}</td>
+                <td class="info recovered">{{i.recovered}}</td>
               </tr>
             </tbody>
           </table>
@@ -81,13 +77,15 @@
           <br /><br />
           <h2>Grafički prikaz rasta broja zaraženih</h2>
           <br />
-          <canvas id="canvas"></canvas>
-          <progress
-            id="animationProgress"
-            max="1"
-            value="0"
-            style="width: 100%"
-          ></progress>
+          <div class="canvased">
+            <canvas id="canvas"></canvas>
+            <progress
+              id="animationProgress"
+              max="1"
+              value="0"
+              style="width: 100%"
+            ></progress>
+          </div>
         </div>
       </div>
       <div class="row" id="info">
@@ -97,28 +95,39 @@
           <ul class="list-group">
             <li class="list-group-item">
               <a
+                class="list-link"
                 href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
                 >WHO organizacija</a
               >
             </li>
             <li class="list-group-item">
-              <a href="https://www.youtube.com/watch?v=0z5rzK_Q9Hk"
+              <a
+                class="list-link"
+                href="https://www.youtube.com/watch?v=0z5rzK_Q9Hk"
                 >Hrvatski matematičar, Toni Milun o COVID-19</a
               >
             </li>
             <li class="list-group-item">
-              <a href="https://www.youtube.com/watch?v=k6nLfCbAzgo"
+              <a
+                class="list-link"
+                href="https://www.youtube.com/watch?v=k6nLfCbAzgo"
                 >Engleski matematičar, Ben Sparks, o COVID-19</a
               >
             </li>
             <li class="list-group-item">
-              <a href="https://www.youtube.com/watch?v=gxAaO2rsdIs">
+              <a
+                class="list-link"
+                href="https://www.youtube.com/watch?v=gxAaO2rsdIs"
+              >
                 Online matematičar, o uticaju izolacije na daljnji razvoj
                 COVID-19.
               </a>
             </li>
             <li class="list-group-item">
-              <a href="https://pomber.github.io/covid19/timeseries.json">
+              <a
+                class="list-link"
+                href="https://pomber.github.io/covid19/timeseries.json"
+              >
                 JSON podaci za svaku državu
               </a>
             </li>
@@ -143,11 +152,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="i in Bosnia">
-                <td class="info">{{i.date}}</td>
-                <td class="info">{{i.confirmed}}</td>
-                <td class="info">{{i.deaths}}</td>
-                <td class="info">{{i.recovered}}</td>
+              <tr v-for="i in Bosnia" class="hoverable">
+                <td class="info date">{{i.date}}</td>
+                <td class="info confirmed">{{i.confirmed}}</td>
+                <td class="info deaths">{{i.deaths}}</td>
+                <td class="info recovered">{{i.recovered}}</td>
               </tr>
             </tbody>
           </table>

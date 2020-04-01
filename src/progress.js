@@ -182,13 +182,3 @@ window.onload = function() {
   var ctx = document.getElementById("canvas").getContext("2d");
   window.myLine = new Chart(ctx, config);
 };
-
-document.getElementById("randomizeData").addEventListener("click", function() {
-  config.data.datasets.forEach(function(dataset) {
-    dataset.data = dataset.data.map(function() {
-      return randomScalingFactor();
-    });
-  });
-
-  window.myLine.update();
-});

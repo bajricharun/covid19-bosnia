@@ -1,4 +1,21 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #343a40;
+  left: 0;
+  right: 0;
+}
+table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 tbody {
+  background-color: aqua;
   font-size: 18px;
 }
 h3 {
@@ -8,10 +25,40 @@ nav {
   box-shadow: 0px 0px 15px 5px #2e343a99;
 }
 canvas {
+  position: relative;
+  width: max-content;
+  height: max-content;
   box-shadow: 0 0 15px 5px #2e343a99;
 }
 progress {
   margin-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: #33b5e5;
+}
+a:hover {
+  color: #0099cc;
+}
+.list-group {
+  list-style-type: none;
+  background-color: #eceff1;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.date {
+  background-color: yellow;
+}
+.deaths {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.confirmed {
+  background-color: red;
+}
+.canvased {
+  width: 100%;
 }
 .container {
   margin-top: 100px;
@@ -36,13 +83,18 @@ progress {
   font-size: 20px;
 }
 .col-md-8 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
   align-self: center;
   align-content: center;
   align-items: center;
   align-items: center;
   justify-content: center;
+}
+.offset-md-2 {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #navBar {
   position: fixed;
@@ -97,4 +149,23 @@ footer {
   left: 0;
   right: 0;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  table {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
