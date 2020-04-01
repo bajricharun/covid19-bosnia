@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/chart.min.js"></script>
+    <script src="./src/utils.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Covid19 - Bosna i Hercegovina</title>
+    <style>
+      canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+      <h3><a href="./index.html">Covid19 Bosna i Hercegovina</a></h3>
+      <a href="javascript:void(0)" onclick="showNav()"
+        ><i class="fa fa-bars"></i
+      ></a>
+    </nav>
+    <div class="container">
+      <ul class="navbar-nav" id="navBar">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#current">Trenutno stanje</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#graph">Grafik</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#info">Informacije</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#devel">Razvoj pandemije</a>
+        </li>
+      </ul>
+      <div class="row" id="current">
+        <!-- Current state of covid19-->
+        <div class="col-md-8 offset-md-2 special">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="resources/statistika_i_graf.pdf">PDF fajl</a>
+            </li>
+            <li class="list-group-item">
+              <a href="resources/statistika_i_graf.xlsx">Excel fajl</a>
+            </li>
+            <li class="list-group-item">
+              <a href="resources/bosnia.json">JSON fajl</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./src/functions.js"></script>
+  </body>
+</html>

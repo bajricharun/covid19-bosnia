@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/chart.min.js"></script>
+    <script src="./src/utils.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Covid19 - Bosna i Hercegovina</title>
+    <style>
+      canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+      <h3><a href="./index.html">Covid19 Bosna i Hercegovina</a></h3>
+      <a href="javascript:void(0)" onclick="showNav()"
+        ><i class="fa fa-bars"></i
+      ></a>
+    </nav>
+    <div class="container">
+      <ul class="navbar-nav" id="navBar">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#current">Trenutno stanje</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#graph">Grafik</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#info">Informacije</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#devel">Razvoj pandemije</a>
+        </li>
+      </ul>
+      <div class="row" id="current">
+        <!-- Current state of covid19-->
+        <div class="col-md-8 offset-md-2 special">
+          <h2>Aktuelni podaci</h2>
+          <p>Stranica se ažurira svaki dan po tri puta</p>
+          <br />
+          <table class="table-bordered table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th>Datum (godina/mjesec/dan)</th>
+                <th>Broj zaraženih</th>
+                <th>Broj umrlih</th>
+                <th>Broj oporavljenih</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="i in latest">
+                <td class="info">{{i.date}}</td>
+                <td class="info">{{i.confirmed}}</td>
+                <td class="info">{{i.deaths}}</td>
+                <td class="info">{{i.recovered}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row" id="graph">
+        <div class="col-md-8 offset-md-2">
+          <br /><br />
+          <h2>Grafički prikaz rasta broja zaraženih</h2>
+          <br />
+          <canvas id="canvas"></canvas>
+          <progress
+            id="animationProgress"
+            max="1"
+            value="0"
+            style="width: 100%"
+          ></progress>
+        </div>
+      </div>
+      <div class="row" id="info">
+        <div class="col-md-8 offset-md-2">
+          <br />
+          <h2>Relevantni linkovi za praćenje razvoja</h2>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a
+                href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+                >WHO organizacija</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="https://www.youtube.com/watch?v=0z5rzK_Q9Hk"
+                >Hrvatski matematičar, Toni Milun o COVID-19</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="https://www.youtube.com/watch?v=k6nLfCbAzgo"
+                >Engleski matematičar, Ben Sparks, o COVID-19</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="https://www.youtube.com/watch?v=gxAaO2rsdIs">
+                Online matematičar, o uticaju izolacije na daljnji razvoj
+                COVID-19.
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://pomber.github.io/covid19/timeseries.json">
+                JSON podaci za svaku državu
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" id="devel">
+        <div class="col-md-8 offset-md-2">
+          <br />
+          <h2>Tabela razvoja</h2>
+          <p>
+            Ista tabela je dostupna u Excel i PDF verziji, te JSON verziji za
+            preuzimanje. Linkove možete pronaći <a href="data.html">ovdje.</a>
+          </p>
+          <table class="table-bordered table-hover">
+            <thead class="thead-dark theadara" onclick="showTable()">
+              <tr>
+                <th>Datum (godina/mjesec/dan)</th>
+                <th>Broj zaraženih</th>
+                <th>Broj umrlih</th>
+                <th>Broj oporavljenih</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="i in Bosnia">
+                <td class="info">{{i.date}}</td>
+                <td class="info">{{i.confirmed}}</td>
+                <td class="info">{{i.deaths}}</td>
+                <td class="info">{{i.recovered}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        All rights reserved, &#169; Harun Bajrić
+      </div>
+    </footer>
+  </body>
+  <script src="./src/App.js"></script>
+  <script src="./src/functions.js"></script>
+  <script src="./src/progress.js"></script>
+</html>

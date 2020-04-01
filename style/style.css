@@ -1,0 +1,100 @@
+tbody {
+  font-size: 18px;
+}
+h3 {
+  color: #fff;
+}
+nav {
+  box-shadow: 0px 0px 15px 5px #2e343a99;
+}
+canvas {
+  box-shadow: 0 0 15px 5px #2e343a99;
+}
+progress {
+  margin-top: 15px;
+}
+.container {
+  margin-top: 100px;
+}
+.table-bordered {
+  padding: 20px;
+}
+.thead-dark {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.info {
+  text-align: center;
+}
+.special {
+  font-size: 20px;
+}
+.table-bordered {
+  box-shadow: 0px 0px 15px 5px #2e343a99;
+}
+.theadara {
+  font-size: 20px;
+}
+.col-md-8 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+#navBar {
+  position: fixed;
+  background-color: #343a40;
+  top: 58px;
+  left: 20px;
+  right: 20px;
+  display: none;
+
+  box-shadow: 0px 0px 15px 5px #2e343a99;
+}
+.center {
+  text-align: center;
+}
+.nav-link {
+  color: white;
+  font-size: 20px;
+}
+.nav-link:hover {
+  background-color: rgb(212, 212, 212);
+  color: #343a40;
+}
+.fa.fa-bars {
+  color: white;
+  position: absolute;
+  right: 20px;
+  bottom: 13px;
+  font-size: 30px;
+}
+#tableBody {
+  visibility: hidden;
+}
+#tabela {
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+h3 > a {
+  text-decoration: none;
+  color: #fff;
+}
+h3 > a:hover {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #343a40;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
