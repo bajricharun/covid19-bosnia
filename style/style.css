@@ -162,9 +162,6 @@ footer {
   body {
     overflow-x: hidden;
   }
-  * {
-    overflow-x: hidden;
-  }
   nav {
     left: 0;
     right: 0;
