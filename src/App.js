@@ -172,7 +172,7 @@ new Vue({
       },
       {
         date: "02.04.2020",
-        confirmed: 505,
+        confirmed: 513,
         deaths: 15,
         recovered: 20
       }
@@ -180,7 +180,7 @@ new Vue({
     latest: [
       {
         date: "02.04.2020",
-        confirmed: 505,
+        confirmed: 513,
         deaths: 15,
         recovered: 20
       }
