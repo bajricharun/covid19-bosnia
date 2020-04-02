@@ -173,7 +173,7 @@ new Vue({
       {
         date: "02.04.2020",
         confirmed: 532,
-        deaths: 15,
+        deaths: 16,
         recovered: 20
       }
     ],
