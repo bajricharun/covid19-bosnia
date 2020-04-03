@@ -156,11 +156,28 @@
       "deaths": 10,
       "recovered": 17
     },
-    {
-      "date": "2020-4-01",
-      "confirmed": 457,
-      "deaths": 13,
-      "recovered": 19
-    }
+        date: "31.03.2020",
+        confirmed: 420,
+        deaths: 13,
+        recovered: 17
+      },
+      {
+        date: "01.04.2020",
+        confirmed: 459,
+        deaths: 13,
+        recovered: 19
+      },
+      {
+        date: "02.04.2020",
+        confirmed: 533,
+        deaths: 16,
+        recovered: 20
+      },
+      {
+        date: "03.04.2020",
+        confirmed: 579,
+        deaths: 17,
+        recovered: 27
+      }
   ]
 }
