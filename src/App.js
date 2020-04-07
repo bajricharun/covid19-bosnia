@@ -193,14 +193,20 @@ new Vue({
         confirmed: 656,
         deaths: 24,
         recovered: 30
-      }
-    ],
-    latest: [
+      },
       {
         date: "06.04.2020",
         confirmed: 674,
         deaths: 29,
         recovered: 47
+      }
+    ],
+    latest: [
+      {
+        date: "07.04.2020",
+        confirmed: 740,
+        deaths: 30,
+        recovered: 68
       }
     ]
   }
