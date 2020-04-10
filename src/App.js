@@ -217,14 +217,20 @@ new Vue({
         confirmed: 859,
         deaths: 35,
         recovered: 101
+      },
+            {
+        date: "10.04.2020",
+        confirmed: 886,
+        deaths: 36,
+        recovered: 129
       }
     ],
     latest: [
       {
         date: "10.04.2020",
-        confirmed: 859,
-        deaths: 35,
-        recovered: 101
+        confirmed: 886,
+        deaths: 36,
+        recovered: 129
       }
     ]
   }
