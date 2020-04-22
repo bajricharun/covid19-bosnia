@@ -6,232 +6,298 @@ new Vue({
         date: "05.03.2020",
         confirmed: 2,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "06.03.2020",
         confirmed: 2,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "07.03.2020",
         confirmed: 3,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "08.03.2020",
         confirmed: 3,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "09.03.2020",
         confirmed: 3,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "10.03.2020",
         confirmed: 5,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "11.03.2020",
         confirmed: 7,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "12.03.2020",
         confirmed: 11,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "13.03.2020",
         confirmed: 13,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "14.03.2020",
         confirmed: 18,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "15.03.2020",
         confirmed: 24,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "16.03.2020",
         confirmed: 25,
         deaths: 0,
-        recovered: 0
+        recovered: 0,
       },
       {
         date: "17.03.2020",
         confirmed: 26,
         deaths: 0,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "18.03.2020",
         confirmed: 38,
         deaths: 0,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "19.03.2020",
         confirmed: 63,
         deaths: 0,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "20.03.2020",
         confirmed: 89,
         deaths: 0,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "21.03.2020",
         confirmed: 93,
         deaths: 1,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "22.03.2020",
         confirmed: 126,
         deaths: 1,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "23.03.2020",
         confirmed: 136,
         deaths: 1,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "24.03.2020",
         confirmed: 166,
         deaths: 3,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "25.03.2020",
         confirmed: 176,
         deaths: 3,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "26.03.2020",
         confirmed: 191,
         deaths: 3,
-        recovered: 2
+        recovered: 2,
       },
       {
         date: "27.03.2020",
         confirmed: 237,
         deaths: 4,
-        recovered: 5
+        recovered: 5,
       },
       {
         date: "28.03.2020",
         confirmed: 258,
         deaths: 5,
-        recovered: 5
+        recovered: 5,
       },
       {
         date: "29.03.2020",
         confirmed: 323,
         deaths: 6,
-        recovered: 8
+        recovered: 8,
       },
       {
         date: "30.03.2020",
         confirmed: 368,
         deaths: 10,
-        recovered: 17
+        recovered: 17,
       },
       {
         date: "31.03.2020",
         confirmed: 420,
         deaths: 13,
-        recovered: 17
+        recovered: 17,
       },
       {
         date: "01.04.2020",
         confirmed: 459,
         deaths: 13,
-        recovered: 19
+        recovered: 19,
       },
       {
         date: "02.04.2020",
         confirmed: 533,
         deaths: 16,
-        recovered: 20
+        recovered: 20,
       },
       {
         date: "03.04.2020",
         confirmed: 579,
         deaths: 17,
-        recovered: 27
+        recovered: 27,
       },
       {
         date: "04.04.2020",
         confirmed: 617,
         deaths: 21,
-        recovered: 28
+        recovered: 28,
       },
       {
-       date: "05.04.2020",
+        date: "05.04.2020",
         confirmed: 656,
         deaths: 24,
-        recovered: 30
+        recovered: 30,
       },
       {
         date: "06.04.2020",
         confirmed: 674,
         deaths: 29,
-        recovered: 47
+        recovered: 47,
       },
       {
         date: "07.04.2020",
         confirmed: 768,
         deaths: 33,
-        recovered: 68
+        recovered: 68,
       },
       {
         date: "08.04.2020",
         confirmed: 804,
         deaths: 34,
-        recovered: 79
+        recovered: 79,
       },
-            {
+      {
         date: "09.04.2020",
         confirmed: 859,
         deaths: 35,
-        recovered: 101
+        recovered: 101,
       },
-            {
-        date: "10.04.2020",
-        confirmed: 886,
-        deaths: 36,
-        recovered: 129
-      }
-    ],
-    latest: [
       {
         date: "10.04.2020",
         confirmed: 886,
         deaths: 36,
-        recovered: 129
-      }
-    ]
-  }
+        recovered: 129,
+      },
+      {
+        date: "2020-4-11",
+        confirmed: 946,
+        deaths: 37,
+        recovered: 139,
+      },
+      {
+        date: "2020-4-12",
+        confirmed: 1009,
+        deaths: 39,
+        recovered: 193,
+      },
+      {
+        date: "2020-4-13",
+        confirmed: 1037,
+        deaths: 39,
+        recovered: 206,
+      },
+      {
+        date: "2020-4-14",
+        confirmed: 1083,
+        deaths: 40,
+        recovered: 236,
+      },
+      {
+        date: "2020-4-15",
+        confirmed: 1110,
+        deaths: 41,
+        recovered: 253,
+      },
+      {
+        date: "2020-4-16",
+        confirmed: 1167,
+        deaths: 43,
+        recovered: 277,
+      },
+      {
+        date: "2020-4-17",
+        confirmed: 1214,
+        deaths: 46,
+        recovered: 320,
+      },
+      {
+        date: "2020-4-18",
+        confirmed: 1268,
+        deaths: 47,
+        recovered: 338,
+      },
+      {
+        date: "2020-4-19",
+        confirmed: 1285,
+        deaths: 48,
+        recovered: 347,
+      },
+      {
+        date: "2020-4-20",
+        confirmed: 1309,
+        deaths: 49,
+        recovered: 381,
+      },
+      {
+        date: "2020-4-21",
+        confirmed: 1342,
+        deaths: 51,
+        recovered: 437,
+      },
+    ],
+    latest: [
+      {
+        date: "22.04.2020",
+        confirmed: 1368,
+        deaths: 53,
+        recovered: 460,
+      },
+    ],
+  },
 });

@@ -35,7 +35,7 @@ var config = {
       30.03,
       31.03,
       1.04,
-      2.04, 
+      2.04,
       3.04,
       4.04,
       5.04,
@@ -43,7 +43,19 @@ var config = {
       7.04,
       8.04,
       9.04,
-      10.04
+      10.04,
+      11.04,
+      12.04,
+      13.04,
+      14.04,
+      15.04,
+      16.04,
+      17.04,
+      18.04,
+      19.04,
+      20.04,
+      21.04,
+      22.04,
     ],
     datasets: [
       {
@@ -85,15 +97,27 @@ var config = {
           420,
           459,
           533,
-          579, 
+          579,
           617,
           656,
           674,
           768,
           804,
           859,
-          886
-        ]
+          886,
+          946,
+          1009,
+          1037,
+          1083,
+          1110,
+          1167,
+          1214,
+          1268,
+          1285,
+          1309,
+          1342,
+          1368,
+        ],
       },
       {
         label: "Broj oporavljenih",
@@ -141,8 +165,20 @@ var config = {
           68,
           79,
           101,
-          129
-        ]
+          129,
+          139,
+          193,
+          206,
+          236,
+          253,
+          277,
+          320,
+          338,
+          347,
+          381,
+          437,
+          460,
+        ],
       },
       {
         label: "Broj preminulih",
@@ -190,31 +226,43 @@ var config = {
           33,
           34,
           35,
-          36
-        ]
-      }
-    ]
+          36,
+          37,
+          39,
+          39,
+          40,
+          41,
+          43,
+          46,
+          47,
+          48,
+          49,
+          51,
+          53,
+        ],
+      },
+    ],
   },
   options: {
     title: {
       display: true,
-      text: "Prikaz rasta broja zaraženih"
+      text: "Prikaz rasta broja zaraženih",
     },
     animation: {
       duration: 3000,
-      onProgress: function(animation) {
+      onProgress: function (animation) {
         progress.value = animation.currentStep / animation.numSteps;
       },
-      onComplete: function() {
-        window.setTimeout(function() {
+      onComplete: function () {
+        window.setTimeout(function () {
           progress.value = 0;
         }, 2000);
-      }
-    }
-  }
+      },
+    },
+  },
 };
 
-window.onload = function() {
+window.onload = function () {
   var ctx = document.getElementById("canvas").getContext("2d");
   window.myLine = new Chart(ctx, config);
 };
